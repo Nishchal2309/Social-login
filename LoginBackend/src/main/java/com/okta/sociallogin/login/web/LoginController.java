@@ -1,4 +1,4 @@
-package com.okta.sociallogin.web.login;
+package com.okta.sociallogin.login.web;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

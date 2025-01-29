@@ -11,7 +11,8 @@
 	<groupId>com.okta</groupId>
 	<artifactId>Social-Login</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Social-Login</name>
+    <packaging>pom</packaging>
+    <name>Social-Login</name>
 	<description>Demo project for Social Login using Auth0</description>
 	<url/>
 	<licenses>
@@ -20,7 +21,10 @@
 	<developers>
 		<developer/>
 	</developers>
-	<scm>
+    <modules>
+        <module>LoginBackend</module>
+    </modules>
+    <scm>
 		<connection/>
 		<developerConnection/>
 		<tag/>

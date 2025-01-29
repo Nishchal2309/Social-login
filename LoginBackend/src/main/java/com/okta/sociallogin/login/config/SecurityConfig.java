@@ -1,4 +1,4 @@
-package com.okta.sociallogin.config;
+package com.okta.sociallogin.login.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
