@@ -1,0 +1,12 @@
+# src/main/resources/application.yml
+okta:
+  oauth2:
+    issuer: https://dev-m1je47ng7olmidg5.us.auth0.com/
+    client-id: VcfFSO6O3IrGHIORb1cRwT1E0HkjDVkD
+    client-secret: dgJEXogNOQwfR340DkAcgrT6FbGt4SbzFuxGZjvA9Vqo4_IwhL5uNhU2QfLneyPm
+
+# The sample and instructions above for the callback and logout URL configuration use port 3000.
+# If you wish to use a different port, change this and be sure your callback and logout URLs are
+# configured with the correct port.
+server:
+  port: 3000

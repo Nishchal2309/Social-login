@@ -12,7 +12,7 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain configure(HttpSecurity http) throws Exception {
-
+        // add authorization details
         return http.build();
     }
 }
