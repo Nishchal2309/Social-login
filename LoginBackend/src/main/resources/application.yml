@@ -9,4 +9,4 @@ okta:
 # If you wish to use a different port, change this and be sure your callback and logout URLs are
 # configured with the correct port.
 server:
-  port: 3000
+  port: 8080
