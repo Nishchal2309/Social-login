@@ -4,6 +4,7 @@ okta:
     issuer: https://dev-m1je47ng7olmidg5.us.auth0.com/
     client-id: VcfFSO6O3IrGHIORb1cRwT1E0HkjDVkD
     client-secret: dgJEXogNOQwfR340DkAcgrT6FbGt4SbzFuxGZjvA9Vqo4_IwhL5uNhU2QfLneyPm
+    audience: https://my-auth0-social-login/
 
 # The sample and instructions above for the callback and logout URL configuration use port 3000.
 # If you wish to use a different port, change this and be sure your callback and logout URLs are

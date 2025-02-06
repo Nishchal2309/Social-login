@@ -13,4 +13,8 @@ public class LoginController {
         return "user logged in";
     }
 
+    @GetMapping(path = "/privatescope")
+    public String privateController(){
+        return "you are now authorized";
+    }
 }

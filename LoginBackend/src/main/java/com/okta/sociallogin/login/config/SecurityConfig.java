@@ -15,9 +15,11 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain configure(HttpSecurity http) throws Exception {
         // add authorization details
-        http.authorizeHttpRequests(authorize -> authorize
+        http.authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/okta/login").permitAll()
+                        .requestMatchers("/okta/privatescope").hasAuthority("SCOPE_test:scope")
                         .anyRequest().authenticated()
-                ).oauth2Login(withDefaults());
+                ).oauth2ResourceServer(oauth2 -> oauth2.jwt(withDefaults()));
         return http.build();
     }
 }

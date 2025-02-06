@@ -11,6 +11,8 @@ createRoot(document.getElementById("root")!).render(
       clientId="VcfFSO6O3IrGHIORb1cRwT1E0HkjDVkD"
       authorizationParams={{
         redirect_uri: "http://localhost:5173/frontpage",
+        audience: "https://my-auth0-social-login/",
+        scope: "test:scope",
       }}
     >
       <App />
