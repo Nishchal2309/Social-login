@@ -1,10 +1,13 @@
 import { useAuth0 } from "@auth0/auth0-react";
+import { useEffect } from "react";
 
 const FrontPage = () => {
-  const { logout } = useAuth0();
+  const { logout, isAuthenticated } = useAuth0();
+  useEffect(() => {
+    console.log("is authenticated", { isAuthenticated });
+  }, [isAuthenticated]);
   return (
     <div className="card">
-      <h2>CLick below to logout</h2>
       <button
         onClick={() =>
           logout({
@@ -12,7 +15,7 @@ const FrontPage = () => {
           })
         }
       >
-        LOGOUT
+        LOGOUT when authenticated
       </button>
     </div>
   );
