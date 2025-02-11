@@ -15,7 +15,8 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain configure(HttpSecurity http) throws Exception {
         // add authorization details
-        http.authorizeHttpRequests(auth -> auth
+        http.cors(withDefaults())
+                .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/okta/login").permitAll()
                         .requestMatchers("/okta/privatescope").hasAuthority("SCOPE_test:scope")
                         .anyRequest().authenticated()
