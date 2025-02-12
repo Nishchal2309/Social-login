@@ -30,8 +30,8 @@ const FrontPage = () => {
             Authorization: `Bearer ${token}`,
           },
         });
-        const resultString = await resp.json();
-        console.log("this is the api response", resultString);
+        const resultString = await resp.text();
+        console.log("this is the api response : ", resultString);
       };
       getApiResponse();
     }
