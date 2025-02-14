@@ -12,7 +12,7 @@ createRoot(document.getElementById("root")!).render(
       authorizationParams={{
         redirect_uri: "http://localhost:5173/frontpage",
         audience: "https://my-auth0-social-login/",
-        scope: "test:scope",
+        scope: "test:scope update:scope",
       }}
     >
       <App />
