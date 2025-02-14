@@ -5,7 +5,7 @@
 Authentication of the user is taken care by auth0 in the background after auth0 takes the user to a universal login page.
 
 - Project also takes care of authorization of the user. 
-Use Auth0Provider component on react frontend side from where it requests for a set of tokens.
+Uses Auth0Provider component on react frontend side from where it requests for a set of predefined scopes in a token.
 Through this approach, the user always requests the same set scopes and this approach is good for basic apps
 
 # Enhancement ??
